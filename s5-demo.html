@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Oops! I i18n'd your app</title>
+<!-- metadata -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20091622" />
+<meta name="author" content="Jeffrey Goff" />
+<meta name="company" content="iParadigms LLC" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- embedded styles -->
+<style type="text/css" media="all">
+.imgcon {width: 525px; margin: 0 auto; padding: 0; text-align: center;}
+#anim {width: 270px; height: 320px; position: relative; margin-top: 0.5em;}
+#anim img {position: absolute; top: 42px; left: 24px;}
+img#me01 {top: 0; left: 0;}
+img#me02 {left: 23px;}
+img#me04 {top: 44px;}
+img#me05 {top: 43px;left: 36px;}
+</style>
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h1>iParadigms LLC</h1>
+<h2>YAPC|10 &#8226; Jun 22, 2009</h2>
+</div>
+</div>
+
+<div class="presentation">
+
+<div class="slide">
+<h1>Oops! I I18n'd Your App</h1>
+<h3>Jeffrey Goff</h3>
+<h4><a href="http://www.iparadigms.com/" rel="external">iParadigms LLC</a></h4>
+<div class="handout"></div>
+</div>
+
+<!-- {{{ README -->
+<div class="slide">
+  <h1>README</h1>
+  <ul class="incremental show-first">
+    <li>No Country For Old Code</li>
+    <li>The Weakest Link</li>
+    <li>Lost in Translation</li>
+    <img width="200" src="pix/britney_spears.jpg"/>
+  </ul>
+</div>
+<!-- }}} -->
+
+<!-- ... -->
+
+<!-- {{{ No Country For Old Code -->
+<div class="slide">
+  <h1>No Country For Old Code</h1>
+  <ul class="incremental show-first">
+    <li>&lt;% print loc( q/ASPs. Very dangerous/ ); %&gt;.</li>
+    <li>&lt;%= loc("You go %1", 'first') %&gt;</li>
+    <li>
+      <verbatim>
+msgid "You go %1"<br/>
+msgstr "คุณไปก่อน%1"
+      </verbatim>
+    </li>
+  </ul>
+</div>
+<!-- }}} -->
+
+<!-- {{{ Encoding -->
+<div class="slide">
+  <h1>Encoding</h1>
+  <ul class="incremental show-first">
+    <li>&amp;copy; vs. ^S vs. ©</li>
+    <li>French orthography</li>
+    <li>â€œsmart quotesâ€ </li>
+    <li>UTF-8</li>
+  </ul>
+</div>
+<!-- }}} -->
+
+<!-- {{{ Just Say No -->
+<div class="slide">
+  <h1>Just Say No... to Excel</h1>
+  <ul>
+    <li>Autoformatting</li>
+    <li>UTF-8</li>
+    <li>Translators</li>
+  </ul>
+</div>
+<!-- }}} -->
+
+<!-- {{{ Checkin Denied -->
+<div class="slide">
+  <h1>Checkin Denied</h1>
+  <ul>
+    <li>Unlocalized HTML</li>
+    <li>Incorrectly formatted tags</li>
+    <li>Bad .po files</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1>CSI: HTML</h1>
+  <ul>
+    <li>Displayed text</li>
+    <li>Hidden text (&lt;img alt=&quot;blah&quot;/&gt;)</li>
+    <li>Input tags (&lt;input value=&quot;blah&quot;/&gt;)</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1></h1>
+  <code>
+msgid "from:"<br/>
+msgstr "à partir de:&amp;nbsp;"<br/>
+  </code>
+</div>
+<!-- }}} -->
+
+<!-- {{{ Big Brother -->
+<div class="slide">
+  <h1>Big Brother</h1>
+  <ul>
+    <li>SVN::Notify</li>
+    <li>PPI checks</li>
+    <li>.po Files</li>
+  </ul>
+</div>
+<!-- }}} -->
+
+<!-- ... -->
+
+<!-- {{{ Lost in Translation XXX -->
+<div class="slide">
+  <h1>Lost in Translation</h1>
+  <ul>
+    <li>File encoding</li>
+    <li>Spreadsheet shenanigans</li>
+  </ul>
+</div>
+<!-- }}} -->
+
+<!-- {{{ The Tower of Babel -->
+<div class="slide">
+  <h1>The Tower of Babel</h1>
+  <ul>
+    <li>Names</li>
+    <li>Numbers</li>
+    <li>Dates</li>
+    <li>French orthography</li>
+    <li>R-to-L</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1>The Name's The Thing</h1>
+  <ul class="incremental">
+    <li>歡迎您，戈夫杰弗裡</li>
+    <li>歡迎您，杰弗裡高夫</li>
+    <li>Breaking up is hard to do</li>
+    <li>&lt;%= loc("Welcome, %1") %&gt;</li>
+    <li>&lt;%= loc("Welcome, %1 %2") %&gt;</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1>All You Need Is Cash</h1>
+  <ul class="incremental">
+    <li>$1,000</li>
+    <li>€1.000,00</li>
+  </ul>
+</div>
+<!-- }}} -->
+
+<!-- {{{ Google FTW -->
+<div class="slide">
+  <h1>Google wins</h1>
+  <ul class="incremental">
+    <li>Live documents</li>
+    <li>Spreadsheets</li>
+    <li>translate.google.com</li>
+    <li>"you go %1"</li>
+    <li>"คุณไป% 1"</li>
+  </ul>
+</div>
+<!-- }}} -->
+
+
+
+
+
+
+
+
+<div class="slide">
+<h1>Origins</h1>
+<ul>
+<li>Opera 4 introduced <a href="http://www.opera.com/support/tutorials/operashow/" rel="external">Opera Show</a>, a projection-mode style sheet technology (link demonstrates external link styling and window spawning)</li>
+<li>Allows a single XHTML document to be turned into a PowerPoint-like slide show</li>
+<li>Adding screen and print style sheets allows for multi-medium views of a single document</li>
+<img src="pix/britney_spears.jpg" alt="" id="me05" height="200" class="incremental" />
+</ul>
+</div>
+
+
+</div>
+
+</body>
+</html>
